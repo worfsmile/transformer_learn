@@ -1,5 +1,5 @@
 from Attention import MultiHeadAttention
-from PositionalEncoding import PositionalEncoding, PositionwiseFeedForward, Embeddings
+from PositionEncoder import PositionalEncoding, PositionwiseFeedForward, Embeddings
 from EncoderDecoder import EncoderDecoder, Encoder, Decoder, Generator, EncoderLayer, DecoderLayer
 import torch.nn as nn
 import copy

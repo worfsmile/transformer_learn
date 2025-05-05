@@ -1,5 +1,6 @@
 import math
 import torch.nn as nn
+import torch
 
 class PositionwiseFeedForward(nn.Module):
     def __init__(self, d_model, d_ff, dropout=0.1):
@@ -18,6 +19,7 @@ class Embeddings(nn.Module):
         self.d_model = d_model
 
     def forward(self, x):
+        # print(x)
         return self.lut(x) * math.sqrt(self.d_model)
 
 class PositionalEncoding(nn.Module):
